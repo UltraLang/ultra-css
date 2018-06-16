@@ -1,0 +1,647 @@
+/* CSS VARIABLES */
+/* Define colors */
+:root {
+--red: #ff2200;
+--red-orange: #ff5500;
+--orange: #ee8800;
+--gold: #ffbb22;
+--yellow: #ffdd55;
+--light-green: #88ff00;
+--green: #339922;
+--aqua: #00bb99;
+--sky: #22ccff;
+--blue: #0055bb;
+--indigo: #2222bb;
+--purple: #5500bb;
+--pink: #ff88ff;
+--black: #000000;
+--grey: #bbbbbb;
+--brown: #775544;
+--white: #ffffff;
+}
+/* Use different font */
+body, html {
+font-size: 15px;
+font-family: Arial, sans-serif;
+overflow-x: hidden;
+}
+body {
+overflow: hidden;
+}
+/* Reset padding and margin */
+* {
+padding: 0px!important;
+margin: 0px;!important;
+outline: none;
+}
+/* New heading sizes */
+h1 {
+font-size: 40px;
+}
+h2 {
+font-size: 35px;
+}
+h3 {
+font-size: 30px;
+}
+h4 {
+font-size: 25px;
+}
+h5 {
+font-size: 20px;
+padding: 10px 0px 5px 4px!important
+}
+h6 {
+font-size: 17px;
+padding: 10px 0px 5px 4px!important
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+padding: 10px 0px 15px 4px!important
+}
+p {
+padding: 5px!important;
+}
+div, header, footer, section, main, aside {
+margin: 5px!important;
+width: max-content;
+}
+/* Borders */
+.border {
+border: solid 1px;
+}
+.border-top {border-top: solid 1px}.border-bottom {border-bottom: solid 1px}.border-left {border-left: solid 1px}.border-right {border-right: solid 1px}
+.border-thick {border-width: 5px;}.border-thin {border-width: 1px;}.border-bar {border-width: 8px;}
+.leftbar {border-left: solid 8px;}
+.border-dotted {border-style: dotted}.border-dashed {border-style: dashed}
+.round {border-radius: 3px;}.x-round {border-radius: 5px;}.xx-round {border-radius: 10px;}.circle {border-radius: 75%;}.square {border-radius: 0px;}
+.noborder {border: none!important}.compact-border: {margin: 0px!important;border: none;border-bottom: solid 1px var(--black);}
+/* Buttons */
+button, .button {
+background-color: white;
+color: var(--black);
+cursor: pointer;
+}
+button:hover, .button:hover {
+border-color: var(--sky);
+}
+/* Shadows */
+.shadow {
+box-shadow: 2px 4px 9px 0px black;
+}
+.shadow-hover:hover {
+box-shadow: 2px 4px 9px 0px black;
+}
+.shadow-text {
+text-shadow: 2px 4px 9px black;
+}
+.shadow-text-hover:hover {
+text-shadow: 2px 4px 9px black;
+}
+/* Transitions & animations */
+.transition {
+transition: all 1s ease;
+}
+.fast {transition-duration: 0.5s;animation-duration: 0.5s;}.slow {transition-duration: 2s;animation-duration: 2s;}
+@keyframes spin {
+0% {transform: rotate(0deg)}
+50% {transform: rotate(180deg)}
+100% {transform: rotate(360deg)}
+}
+.spin {animation: spin 1s ease infinite}
+/* Spacing */
+.nospacing {
+margin: 0px!important;
+padding: 0px!important;
+}
+.noaway {margin: 0px!important;}.away {margin: 5px!important;}.x-away {margin: 10px!important;}.xx-away {margin: 15px!important;}.xxx-away {margin: 20px!important;}
+.nospace {padding: 0px!important;}.space {padding: 5px!important;}.x-space {padding: 10px!important;}.xx-space {padding: 15px!important;}.xxx-space {padding: 20px!important;}
+.jumbo {
+margin: 0px!important;
+padding: 75px!important;
+font-size: 30px;
+}
+.indent {
+margin-left: 25px!important;
+}
+/* Color classes */
+.red {
+background-color: var(--red);
+color: #ffffff;
+}
+.red-text {
+color: var(--red);
+}
+.red-hover:hover {
+background-color: var(--red);
+color: #ffffff;
+}
+.red-text-hover:hover {
+color: var(--red);
+}
+.red-border {
+border-color: var(--red);
+}
+.red-border-hover:hover {
+border-color: var(--red);
+}
+
+.red-orange {
+background-color: var(--red-orange);
+color: #ffffff;
+}
+.red-orange-text {
+color: var(--red-orange);
+}
+.red-orange-hover:hover {
+background-color: var(--red-orange);
+color: #ffffff;
+}
+.red-orange-text-hover:hover {
+color: var(--red-orange);
+}
+.red-orange-border {
+border-color: var(--red-orange);
+}
+.red-orange-border-hover:hover {
+border-color: var(--red-orange);
+}
+
+.orange {
+background-color: var(--orange);
+color: #ffffff;
+}
+.orange-text {
+color: var(--orange);
+}
+.orange-hover:hover {
+background-color: var(--orange);
+color: #ffffff;
+}
+.orange-text-hover:hover {
+color: var(--orange);
+}
+.orange-border {
+border-color: var(--orange);
+}
+.orange-border-hover:hover {
+border-color: var(--orange);
+}
+
+.gold {
+background-color: var(--gold);
+color: #ffffff;
+}
+.gold-text {
+color: var(--gold);
+}
+.gold-hover:hover {
+background-color: var(--gold);
+color: #ffffff;
+}
+.gold-text-hover:hover {
+color: var(--gold);
+}
+.gold-border {
+border-color: var(--gold);
+}
+.gold-border-hover:hover {
+border-color: var(--gold);
+}
+
+.yellow {
+background-color: var(--yellow);
+color: #ffffff;
+}
+.yellow-text {
+color: var(--yellow);
+}
+.yellow-hover:hover {
+background-color: var(--yellow);
+color: #ffffff;
+}
+.yellow-text-hover:hover {
+color: var(--yellow);
+}
+.yellow-border {
+border-color: var(--yellow);
+}
+.yellow-border-hover:hover {
+border-color: var(--yellow);
+}
+
+.light-green {
+background-color: var(--light-green);
+color: #ffffff;
+}
+.light-green-text {
+color: var(--light-green);
+}
+.light-green-hover:hover {
+background-color: var(--light-green);
+color: #ffffff;
+}
+.light-green-text-hover:hover {
+color: var(--light-green);
+}
+.light-green-border {
+border-color: var(--light-green);
+}
+.light-green-border-hover:hover {
+border-color: var(--light-green);
+}
+
+.green {
+background-color: var(--green);
+color: #ffffff;
+}
+.green-text {
+color: var(--green);
+}
+.green-hover:hover {
+background-color: var(--green);
+color: #ffffff;
+}
+.green-text-hover:hover {
+color: var(--green);
+}
+.green-border {
+border-color: var(--green);
+}
+.green-border-hover:hover {
+border-color: var(--green);
+}
+
+.aqua {
+background-color: var(--aqua);
+color: #ffffff;
+}
+.aqua-text {
+color: var(--aqua);
+}
+.aqua-hover:hover {
+background-color: var(--aqua);
+color: #ffffff;
+}
+.aqua-text-hover:hover {
+color: var(--aqua);
+}
+.aqua-border {
+border-color: var(--aqua);
+}
+.aqua-border-hover:hover {
+border-color: var(--aqua);
+}
+
+.sky {
+background-color: var(--sky);
+color: #ffffff;
+}
+.sky-text {
+color: var(--sky);
+}
+.sky-hover:hover {
+background-color: var(--sky);
+color: #ffffff;
+}
+.sky-text-hover:hover {
+color: var(--sky);
+}
+.sky-border {
+border-color: var(--sky);
+}
+.sky-border-hover:hover {
+border-color: var(--sky);
+}
+
+.blue {
+background-color: var(--blue);
+color: #ffffff;
+}
+.blue-text {
+color: var(--blue);
+}
+.blue-hover:hover {
+background-color: var(--blue);
+color: #ffffff;
+}
+.blue-text-hover:hover {
+color: var(--blue);
+}
+.blue-border {
+border-color: var(--blue);
+}
+.blue-border-hover:hover {
+border-color: var(--blue);
+}
+
+.indigo {
+background-color: var(--indigo);
+color: #ffffff;
+}
+.indigo-text {
+color: var(--indigo);
+}
+.indigo-hover:hover {
+background-color: var(--indigo);
+color: #ffffff;
+}
+.indigo-text-hover:hover {
+color: var(--indigo);
+}
+.indigo-border {
+border-color: var(--indigo);
+}
+.indigo-border-hover:hover {
+border-color: var(--indigo);
+}
+
+.purple {
+background-color: var(--purple);
+color: #ffffff;
+}
+.purple-text {
+color: var(--purple);
+}
+.purple-hover:hover {
+background-color: var(--purple);
+color: #ffffff;
+}
+.purple-text-hover:hover {
+color: var(--purple);
+}
+.purple-border {
+border-color: var(--purple);
+}
+.purple-border-hover:hover {
+border-color: var(--purple);
+}
+
+.pink {
+background-color: var(--pink);
+color: #ffffff;
+}
+.pink-text {
+color: var(--pink);
+}
+.pink-hover:hover {
+background-color: var(--pink);
+color: #ffffff;
+}
+.pink-text-hover:hover {
+color: var(--pink);
+}
+.pink-border {
+border-color: var(--pink);
+}
+.pink-border-hover:hover {
+border-color: var(--pink);
+}
+
+.black {
+background-color: var(--black);
+color: #ffffff;
+}
+.black-text {
+color: var(--black);
+}
+.black-hover:hover {
+background-color: var(--black);
+color: #ffffff;
+}
+.black-text-hover:hover {
+color: var(--black);
+}
+.black-border {
+border-color: var(--black);
+}
+.black-border-hover:hover {
+border-color: var(--black);
+}
+
+.grey {
+background-color: var(--grey);
+color: #ffffff;
+}
+.grey-text {
+color: var(--grey);
+}
+.grey-hover:hover {
+background-color: var(--grey);
+color: #ffffff;
+}
+.grey-text-hover:hover {
+color: var(--grey);
+}
+.grey-border {
+border-color: var(--grey);
+}
+.grey-border-hover:hover {
+border-color: var(--grey);
+}
+
+.brown {
+background-color: var(--brown);
+color: #ffffff;
+}
+.brown-text {
+color: var(--brown);
+}
+.brown-hover:hover {
+background-color: var(--brown);
+color: #ffffff;
+}
+.brown-text-hover:hover {
+color: var(--brown);
+}
+.brown-border {
+border-color: var(--brown);
+}
+.brown-border-hover:hover {
+border-color: var(--brown);
+}.white {
+background-color: var(--white);
+color: #000000;
+}
+.white-text {
+color: var(--white);
+}
+.white-hover:hover {
+background-color: var(--white);
+color: #000000;
+}
+.white-text-hover:hover {
+color: var(--white);
+}
+.white-border {
+border-color: var(--white);
+}
+.white-border-hover:hover {
+border-color: var(--white);
+}
+/* Rows and formatting */
+.row {
+width: 100%;
+padding: 0px;
+margin: 0px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: stretch;
+align-content: stretch;
+}
+.row * {
+flex-grow: 1;
+}
+.more {
+flex-grow: 2;
+}
+.x-more {
+flex-grow: 3;
+}
+.row-wrap {
+flex-wrap: wrap;
+}
+.half {width: 50%;}.third {width: 33%;}.twothird {width: 66%;}.quarter {width: 25%;}.threequarter {width: 75%;}.fifth {width: 20%;}.twofifth {width: 40%;}.threefifth {width: 60%;}.fourfifth {width: 80%;}
+@media screen and (max-width: 600px) {
+.row {
+flex-wrap: wrap;
+}
+.row * {
+width: 100%!important;
+}
+.hide-tiny {
+visibility: hidden;
+}
+}
+@media screen and (max-width: 800px) {
+.hide-medium {
+display: none;
+}
+}
+@media screen and (min-width: 801px) {
+.hide-large {
+display: none;
+}
+}
+@media print {
+.hide-print {
+display: none;
+}
+}
+/* Dropdown menus */
+.dropdown, .dropdown-hover {
+display: inline;
+cursor: pointer;
+}
+.dropdown summary, .dropdown-hover summary {
+padding: 0px!important;
+}
+.dropdown-content {
+position: absolute;
+top: 40px;
+padding: 5px!important;
+}
+.dropdown-hover .dropdown-content {
+display: none;
+}
+.dropdown-hover:hover .dropdown-content {
+display: block;
+}
+.dropdown-content * {
+display: block;
+}
+/* Forms */
+input, select, button, .button, textarea {
+padding: 8px!important;
+border-radius: 3px;
+border: solid 1px var(--grey);
+}
+input:invalid:focus {
+border-color: var(--red)
+}
+input[type=radio], input[type=checkbox] {
+-webkit-appearance: none;
+appearance: none;
+border: solid 1px var(--grey);
+padding: 5px!important;
+width: 5px;
+height: 5px;
+border-radius: 3px;
+}
+input[type=radio]:checked, input[type=checkbox]:checked {
+background: var(--grey);
+}
+input[type=radio] {
+border-radius: 10px;
+}
+input[required]::after, select[required]::after {
+content: "*";
+color: var(--red);
+}
+*[disabled] {
+pointer-events: none;
+}
+/* Accordians */
+.accordian {
+margin: 2px!important;
+padding: 5px!important;
+}
+.accordian summary {
+padding: 5px!important;
+background-color: var(--black);
+color: white;
+border-radius: 10px;
+padding-left: 18px!important;
+cursor: pointer
+}
+.accordian summary::-webkit-details-marker {
+display: none;
+}
+.accordian::before {
+content: "+";
+color: white;
+position: absolute;
+margin-top: 5px;
+margin-left: 5px;
+}
+.accordian[open]::before {
+content: "-"
+}
+.accordian *:not(summary) {
+height: 0px;
+}
+.accordian[open] *:not(summary) {
+height: auto;
+}
+/* Nav bar */
+nav {
+background: var(--black);
+color: white;
+position: fixed;
+width: 100%;
+top: 0px;
+}
+nav * {
+color: white;
+text-decoration: none;
+padding: 10px!important;
+}
+nav input {
+color: black;
+padding: 8px!important;
+margin: 2px;
+}
+.nav-space {
+margin-top: 50px;
+}
+/* Slideshow */
+.slideshow {
+background-color: var(--black);
+}
+.slide {
+display: none;
+}
+.active {
+display: block;
+}

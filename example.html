@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS</title>
+<link rel="stylesheet" href="./css.css">
+</head>
+<body class="nav-space">
+<nav><a href="#" class="red-hover">UltraCSS Demo</a> <a href="#" class="blue-hover">Link</a> <details class="dropdown"><summary>Dropdown</summary><div class="dropdown-content black"><a href="#" class="blue-hover">Link</a><a href="#" class="blue-hover">Link</a><a href="#" class="blue-hover">Link</a></div></details> <input type="text" placeholder="Search bar"></nav>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p>Example Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, est at pulvinar iaculis, elit massa lacinia eros, in accumsan nisi tellus ut libero. Quisque sagittis eleifend maximus. Nullam et sagittis purus, ac egestas massa. Ut dapibus lacus vel nulla bibendum pellentesque. Duis lorem justo, lobortis ut dui eu, vehicula luctus nibh. Nunc a laoreet ligula. Aliquam et accumsan diam. Pellentesque eget dolor ut neque molestie consequat non ac mauris.</p>
+<h3>Color Classes</h3>
+<div class="row row-wrap">
+<p class="red">Red</p><p class="red-orange">Red Orange</p><p class="orange">Orange</p><p class="gold">Gold</p><p class="yellow">Yellow</p><p class="light-green">Light Green</p><p class="green">Green</p><p class="aqua">Aqua</p><p class="sky">Sky</p><p class="blue">Blue</p><p class="indigo">Indigo</p><p class="purple">Purple</p><p class="pink">Pink</p><p class="black">Black</p><p class="grey">Grey</p><p class="brown">Brown</p></div>
+<h3>Accordians</h3>
+<details class="accordian">
+<summary>Accordian</summary>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, est at pulvinar iaculis, elit massa lacinia eros, in accumsan nisi tellus ut libero. Quisque sagittis eleifend maximus. Nullam et sagittis purus, ac egestas massa. Ut dapibus lacus vel nulla bibendum pellentesque. Duis lorem justo, lobortis ut dui eu, vehicula luctus nibh. Nunc a laoreet ligula. Aliquam et accumsan diam. Pellentesque eget dolor ut neque molestie consequat non ac mauris.
+</details>
+<details class="accordian">
+<summary>Accordian</summary>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, est at pulvinar iaculis, elit massa lacinia eros, in accumsan nisi tellus ut libero. Quisque sagittis eleifend maximus. Nullam et sagittis purus, ac egestas massa. Ut dapibus lacus vel nulla bibendum pellentesque. Duis lorem justo, lobortis ut dui eu, vehicula luctus nibh. Nunc a laoreet ligula. Aliquam et accumsan diam. Pellentesque eget dolor ut neque molestie consequat non ac mauris.
+</details>
+<details class="accordian">
+<summary>Accordian</summary>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, est at pulvinar iaculis, elit massa lacinia eros, in accumsan nisi tellus ut libero. Quisque sagittis eleifend maximus. Nullam et sagittis purus, ac egestas massa. Ut dapibus lacus vel nulla bibendum pellentesque. Duis lorem justo, lobortis ut dui eu, vehicula luctus nibh. Nunc a laoreet ligula. Aliquam et accumsan diam. Pellentesque eget dolor ut neque molestie consequat non ac mauris.
+</details>
+<h3>Forms</h3>
+<p>Name: <input type="text" placeholder="First"> <input type="text" placeholder="Last"></p>
+<p>Age: <select><option>Choose one</option><option>0-18</option><option>18-30</option><option>30-50</option><option>50-65</option><option>65+</option></select></p>
+<p>Favorite Color: <input type="color" value="#ff0000"></p>
+<p>I would like:<br><input type="radio" name="opt"> Subscription<br><input type="radio" name="opt"> Free Trial<br><input type="radio" name="opt"> More Info</p>
+<p>Email: <input type="email" placeholder="you@example.com" required></p>
+<p>Website: <input type="url" placeholder="https://example.com" pattern="http[s]{0,}:\/\/[A-Za-z0-9-_.]{1,}[.][a-zA-Z]{2,}[A-Za-z0-9-/.?#&=_\\%@!<>:;|{}\[\]~+]{0,}"></p>
+<p>Notes (disabled): <input type="text" disabled placeholder="Hello world!"></p>
+<p>Reply to me: <input type="checkbox"></p>
+<p><button>Submit</button></p>
+<h3>Buttons</h3>
+<p><button>Normal Button</button> <button class="red border-red">Colored Button</button> <button class="red-hover">Hover Button</button> <button class="border white red-border">Border Button</button> <button class="border white red-border-hover">Border Hover Button</button></p>
+<h4>Button Shapes</h4>
+<p><button class="circle">&times;</button> <button class="square">&times;</button> <button class="circle">Oval Button</button></p>
+<h4>Hover Buttons</h4>
+<p><button class="red-border red-border-hover red-hover red-text">Button</button> <button class="blue-border blue-border-hover blue-hover blue-text">Button</button> <button class="noborder square red shadow-hover">Button</button> <button class="noborder square blue shadow-hover">Button</button></p>
+<h3>Borders</h3>
+<div class="border"><p>This div has a border!</p></div>
+<div class="border blue-border round"><p>This div has a colored, rounded border!</p></div>
+<div class="border white-border blue-border-hover"><p>This div has a hoverable border!</p></div>
+<div class="leftbar gold-border yellow"><p>This div has a left bar!</p></div>
+<h3>Responsive</h3>
+<div class="row nospacing"><p class="half green">This is a half. When resized, it becomes full width.</p><p class="half">This is also a half.</p></div>
+<div class="row nospacing"><p class="third red">This is a third. When resized, it becomes full width.</p><p class="twothird">Resize the browser window to see the difference. This is two thirds.</p></div>
+<div class="row nospacing"><p class="quarter blue">This is a quarter. When resized, it becomes full width.</p><p class="quarter">This is a quarter.</p><p class="quarter">This is a quarter.</p><p class="quarter">This is a quarter.</p></div>
+<div class="row nospacing"><p class="fifth orange">This is a fifth. When resized, it becomes full width. Most CSS libraries do not have fifths, but this one does!</p><p class="fifth">This is also a fifth</p><p class="twofifth yellow">This is two fifths.</p><p class="fifth">This is a fifth</p></div>
+<p class="hide-tiny">This will be hidden on tiny screens.</p>
+<p class="hide-medium">This will be hidden on medium screens.</p>
+<p class="hide-large">This will be hidden on large screens.</p>
+<h3>Transition & Animation</h3>
+<p class="transition red-hover">Hover over me!</p>
+<p class="transition red-hover fast">Hover over me! Fast transition.</p>
+<p class="transition red-hover slow">Hover over me! Slow transition.</p>
+<h3>Spacing</h3>
+<p class="nospacing">No spacing.</p>
+<p class="xxx-space aqua noaway">Lots of colored space!</p>
+<p class="xxx-away pink nospace">Lots of un-colored space!</p>
+<p class="xx-away xx-space red-orange">Lots of mixed space!</p>
+<p class="jumbo sky">Jumbo Size!</p>
+<h3>Slideshow</h3>
+<div class="slideshow" data-slideshow-speed="3" data-slideshow-controls="_auto">
+<p class="slide red xx-space noaway active">This slideshow auto-updates</p>
+<p class="slide blue xx-space noaway">Check it out!</p>
+<p class="slide red-orange xx-space noaway">This is the third slide.</p>
+</div>
+<div class="slideshow" data-slideshow-controls="slideshow-controls">
+<p class="slide yellow xx-space noaway active">This slideshow has controls</p>
+<p class="slide green xx-space noaway">It worked! Yay!</p>
+<p class="slide purple xx-space noaway">Slide 3!</p>
+<div id="slideshow-controls"><button data-slideshow-control="previous">Previous</button><button data-slideshow-control="next">Next</button></div>
+</div>
+<script src="https://cdn.rawgit.com/UltraLang/UltraLangScript/8120bb6b/main.js"></script>
+<script src="./js.js"></script>
+</body>
+</html>
