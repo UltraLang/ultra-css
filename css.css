@@ -45,7 +45,7 @@ h3 {
 font-size: 30px;
 }
 h4 {
-font-size: 25px;
+font-size: 30px;
 }
 h5 {
 font-size: 20px;
@@ -96,7 +96,7 @@ box-shadow: 2px 4px 9px 0px black;
 text-shadow: 2px 4px 9px black;
 }
 .shadow-text-hover:hover {
-text-shadow: 2px 4px 9px black;
+text-shadow: 2px 4px 5px black;
 }
 /* Transitions & animations */
 .transition {
